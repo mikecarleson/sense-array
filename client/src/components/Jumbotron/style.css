@@ -1,56 +1,63 @@
 .jumbotron {
-    background: transparent;
-    background-size:cover;
-    height: 300;
-    clear: both;
-    padding-top: 65vh;
-    text-align: center;
+  background: transparent;
+  background-size: cover;
+  height: 300;
+  clear: both;
+  padding-top: 65vh;
+  text-align: center;
 }
 p {
-    text-align: center;
-    font-size: 3em;
-    margin: 20px 0 20px 0;
-  }
+  text-align: center;
+  font-size: 3em;
+  margin: 20px 0 20px 0;
+}
 
 a {
-    text-decoration: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-  }
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
 
-a:hover  {
-    color: #FF1177;
-    font-family: Monoton;    
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate;
-  }
+a:hover {
+  color: #ff1177;
+  font-family: Monoton;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
 
 a {
-    color: #fff;
-    font-family: 'Monoton', cursive;    
-    -webkit-animation: none;
-    -moz-animation: none;
-    animation: none;
-  }
+  color: #fff;
+  font-family: "Monoton", cursive;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
 
 .non-link {
-    color: #fff;
-    font-family: 'Monoton', cursive;
-    float: center;
+  color: #fff;
+  font-family: "Monoton", cursive;
+  float: center;
 }
 
 .notes {
-    font-family: 'Monoton', cursive;
-    font-size: 2rem;
-    color: red;
-    float: right;
+  font-family: "Monoton", cursive;
+  font-size: 2rem;
+  color: red;
+  float: right;
 }
 
 .back-link {
-    color: red;
-    font-size: 1.5rem;
-    margin-bottom: 10vh;
-    float: right;
+  color: red;
+  font-size: 1.5rem;
+  margin-bottom: 10vh;
+  float: right;
+}
+
+.description {
+  color: white;
+  font-size: 1.5rem;
+  margin: 5;
+  float: right;
 }

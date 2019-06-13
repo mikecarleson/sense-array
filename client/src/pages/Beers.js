@@ -7,13 +7,15 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import Dropdown from "../components/Survey"
 
 class Beers extends Component {
   state = {
     beers: [],
     name: "",
     brewery: "",
-    description: ""
+    description: "",
+    survey: ""
   };
 
   componentDidMount() {
@@ -27,7 +29,8 @@ class Beers extends Component {
           beers: res.data,
           name: "",
           brewery: "",
-          description: ""
+          description: "",
+          survey: ""
         })
       )
       .catch(err => console.log(err));
@@ -52,7 +55,8 @@ class Beers extends Component {
       API.saveBeer({
         name: this.state.name,
         brewery: this.state.brewery,
-        description: this.state.description
+        description: this.state.description,
+        survey: this.state.survey
       })
         .then(res => this.loadBeers())
         .catch(err => console.log(err));
@@ -69,6 +73,15 @@ class Beers extends Component {
               <p className="non-link">What Beer Would you Like to judge?</p>
             </Jumbotron>
           </Col>
+          
+        </Row>
+        <Row>
+        <Col size="md-12">
+              <Dropdown 
+                value={this.state.survey}
+                onChange={this.handleInputChange}
+              />
+              </Col>
         </Row>
             <form>
               <Input
@@ -89,6 +102,7 @@ class Beers extends Component {
                 name="description"
                 placeholder="Description"
               />
+              
               <FormBtn
                 disabled={!(this.state.brewery && this.state.name && this.state.description)}
                 onClick={this.handleFormSubmit}

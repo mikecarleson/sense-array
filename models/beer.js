@@ -5,6 +5,7 @@ const beerSchema = new Schema({
   name: { type: String, required: true },
   brewery: { type: String, required: true },
   description: { type: String, required: true },
+  survey: { type: String },
   date: { type: Date, default: Date.now }
 });
 

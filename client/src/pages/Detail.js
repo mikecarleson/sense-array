@@ -35,8 +35,14 @@ class Detail extends Component {
           <Col size="md-10 md-offset-1">
             <article>
               <h3 className="notes">Tasting Notes</h3>
-              <p>
-                {this.state.beer.decription}
+            </article>
+          </Col>
+        </Row>
+        <Row>
+          <Col size="md-10 md-offset-1">
+            <article>
+              <p className="description">
+                {this.state.beer.description}
               </p>
             </article>
           </Col>
