@@ -1,0 +1,13 @@
+.form-control {
+  opacity: 0.75;
+  background-color: white;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background: greenyellow;
+}
+

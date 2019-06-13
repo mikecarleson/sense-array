@@ -1,0 +1,36 @@
+.jumbotron {
+    background: transparent;
+    background-size:cover;
+    height: 300;
+    clear: both;
+    padding-top: 65vh;
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: 3em;
+    margin: 20px 0 20px 0;
+  }
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+a:hover  {
+    color: #FF1177;
+    font-family: Monoton;    
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+
+a {
+    color: #fff;
+    font-family: 'Monoton', cursive;    
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+  }
