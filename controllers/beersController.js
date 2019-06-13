@@ -1,6 +1,5 @@
 const db = require("../models");
 
-// Defining methods for the BeersController
 module.exports = {
   findAll: function(req, res) {
     db.Beer
