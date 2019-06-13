@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
+import Chart from '../components/Chart';
 
 class Detail extends Component {
   state = {
@@ -22,16 +23,18 @@ class Detail extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <p>
-                {this.state.beer.name} consumed at {this.state.beer.brewery}
+              <p className="non-link">
+                {this.state.beer.name} brewed by {this.state.beer.brewery}
               </p>
             </Jumbotron>
+            <Chart />
           </Col>
         </Row>
+        
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Tasting Notes</h1>
+              <h3 className="notes">Tasting Notes</h3>
               <p>
                 {this.state.beer.decription}
               </p>
@@ -40,7 +43,7 @@ class Detail extends Component {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to Beers</Link>
+            <Link to="/beers" className="back-link">← Back to Beers</Link>
           </Col>
         </Row>
       </Container>

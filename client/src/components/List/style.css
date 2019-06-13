@@ -30,8 +30,8 @@
 
 /* .list-overflow-container li:first-child {
   border-top: none;
-}
+} */
 
 .list-overflow-container li:last-child {
-  border-bottom: none;
-} */
+  margin-bottom: 10vh;;
+} 

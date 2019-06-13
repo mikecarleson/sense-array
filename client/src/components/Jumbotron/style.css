@@ -34,3 +34,23 @@ a {
     -moz-animation: none;
     animation: none;
   }
+
+.non-link {
+    color: #fff;
+    font-family: 'Monoton', cursive;    
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
+.notes {
+    font-family: 'Monoton', cursive;
+    font-size: 2rem;
+    color: red;
+}
+
+.back-link {
+    color: red;
+    font-size: 1.5rem;
+    margin-bottom: 10vh;
+}

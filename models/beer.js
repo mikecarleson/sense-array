@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const beerSchema = new Schema({
   name: { type: String, required: true },
   brewery: { type: String, required: true },
-  description: String,
+  description: { type: String, required: true },
   date: { type: Date, default: Date.now }
 });
 

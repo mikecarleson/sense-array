@@ -64,10 +64,12 @@ class Beers extends Component {
       <Container fluid>
         <Landing />
         <Row>
-          <Col size="md-6">
-            <Jumbotron>
-              <p><a href="/beers">Judge a Beer</a></p>
+          <Col size="md-12">
+          <Jumbotron>
+              <p className="non-link">What Beer Would you Like to judge?</p>
             </Jumbotron>
+          </Col>
+        </Row>
             <form>
               <Input
                 value={this.state.name}
@@ -88,17 +90,13 @@ class Beers extends Component {
                 placeholder="Description"
               />
               <FormBtn
-                disabled={!(this.state.brewery && this.state.name)}
+                disabled={!(this.state.brewery && this.state.name && this.state.description)}
                 onClick={this.handleFormSubmit}
               >
                 Submit Beer
               </FormBtn>
             </form>
-          </Col>
-          <Col size="md-6 sm-12">
-            <Jumbotron>
-            <p><a href="https://codepen.io/FelixRilling/pen/qzfoc">Beers I have judged?</a></p>
-            </Jumbotron>
+          
             {this.state.beers.length ? (
               <List>
                 {this.state.beers.map(beer => (
@@ -115,8 +113,6 @@ class Beers extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
-          </Col>
-        </Row>
       </Container>
     );
   }

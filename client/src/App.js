@@ -4,7 +4,7 @@ import Beers from "./pages/Beers";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import Search from "./pages/Search";
+import Landing from "./pages/Landing";
 
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/" component={Beers} />
-          <Route exact path="/beers" component={Search} />
+          <Route exact path="/beers" component={Beers} />
+          <Route exact path="/" component={Landing} />
           <Route exact path="/beers/:id" component={Detail} />
           <Route component={NoMatch} />
         </Switch>
