@@ -27,8 +27,10 @@ class Detail extends Component {
                 {this.state.beer.name} brewed by {this.state.beer.brewery}
               </p>
             </Jumbotron>
-            <Chart />
           </Col>
+        </Row>
+        <Row>
+          <Chart />          
         </Row>
         
         <Row>
