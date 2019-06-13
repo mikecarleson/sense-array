@@ -42,7 +42,7 @@ class Detail extends Component {
           </Col>
         </Row>
         <Row>
-          <Col size="md-2">
+          <Col size="md-10 md-offset-1">
             <Link to="/beers" className="back-link">← Back to Beers</Link>
           </Col>
         </Row>
