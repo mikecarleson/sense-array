@@ -119,7 +119,7 @@ class Beers extends Component {
                   <ListItem key={beer._id}>
                     <Link to={"/beers/" + beer._id}>
                       <strong>
-                        {beer.name} consumed at {beer.brewery}
+                        {beer.name} brewed by {beer.brewery}
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => this.deleteBeer(beer._id)} />
