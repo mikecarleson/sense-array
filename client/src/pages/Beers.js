@@ -110,6 +110,8 @@ class Beers extends Component {
                 Submit Beer
               </FormBtn>
             </form>
+
+            <p className="judged">Beers I have Judged</p>
           
             {this.state.beers.length ? (
               <List>

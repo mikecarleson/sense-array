@@ -22,7 +22,7 @@ class Detail extends Component {
           <Col size="md-12">
             <Jumbotron>
               <p className="non-link">
-                {this.state.beer.name} brewed by {this.state.beer.brewery}
+                {this.state.beer.name} <p className="brewed">brewed by</p> {this.state.beer.brewery}
               </p>
             </Jumbotron>
           </Col>

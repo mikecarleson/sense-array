@@ -61,3 +61,16 @@ a {
   margin: 5;
   float: right;
 }
+
+.judged {
+  color: red;
+  font-family: "Monoton", cursive;
+  float: center;
+}
+.brewed {
+  color: red;
+  font-family: "Monoton", cursive;
+  float: center;
+  font-size: 6rem;
+}
+
