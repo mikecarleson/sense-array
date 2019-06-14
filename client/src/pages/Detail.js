@@ -10,6 +10,7 @@ class Detail extends Component {
     beer: {}
   };
   componentDidMount() {
+    window.scrollTo(0, 0);
     API.getBeer(this.props.match.params.id)
       .then(res => this.setState({ beer: res.data }))
       .catch(err => console.log(err));
