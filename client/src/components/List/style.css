@@ -1,7 +1,7 @@
 .list-overflow-container {
   max-height: 545px;
   border-radius: 4px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   opacity: .75;
 }
 
@@ -19,3 +19,11 @@
 .list-overflow-container li:last-child {
   margin-bottom: 10vh;;
 } 
+
+.list-group {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+}

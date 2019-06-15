@@ -32,7 +32,8 @@ class Chart extends Component {
                 maintainAspectRatio: false,
                 pointLabels: {
                     fontSize: 30		
-                } 
+                },
+                color: 'white' 
             }}
           />
         )
