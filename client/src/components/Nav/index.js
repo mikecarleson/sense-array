@@ -8,10 +8,10 @@ function Nav() {
         Sense[array]
       </a>
       <div className="navbar-right">
-      <a className="login" href="/">
+      <a className="login" href="/login">
         Login
       </a>
-      <a className="login" href="/">
+      <a className="login" href="/register">
         Signup/
       </a>
       </div>
