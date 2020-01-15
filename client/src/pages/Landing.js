@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
+import Nav from "../components/Nav";
+
 
 
 
@@ -17,6 +19,8 @@ class Landing extends Component {
 
   render() {
     return (
+      <div>
+      <Nav/>
       <Container fluid>
         <Row>
           <Col size="md-6">
@@ -34,6 +38,7 @@ class Landing extends Component {
         </Row>
         
       </Container>
+      </div>
     );
   }
 }

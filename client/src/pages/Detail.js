@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-import Chart from '../components/Chart';
+// import Chart from '../components/Chart';
+import LogoutNav from "../components/LogoutNav";
+
 
 class Detail extends Component {
   state = {
@@ -18,6 +20,8 @@ class Detail extends Component {
 
   render() {
     return (
+      <div>
+      <LogoutNav/>
       <Container fluid>
         <Row>
           <Col size="md-12">
@@ -27,9 +31,6 @@ class Detail extends Component {
               </p>
             </Jumbotron>
           </Col>
-        </Row>
-        <Row>
-          <Chart />          
         </Row>
         
         <Row>
@@ -54,6 +55,7 @@ class Detail extends Component {
           </Col>
         </Row>
       </Container>
+      </div>
     );
   }
 }

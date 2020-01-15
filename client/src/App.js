@@ -7,7 +7,6 @@ import { Provider } from "react-redux";
 import store from "./store";
 import Beers from "./pages/Beers";
 import Detail from "./pages/Detail";
-import Nav from "./components/Nav";
 import Landing from "./pages/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
@@ -38,7 +37,6 @@ function App() {
     <Provider store={store}>
     <Router>
       <div>
-        <Nav />
         <Route exact path="/" component={Landing} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} /> 

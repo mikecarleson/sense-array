@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
-import Dropdown from "../components/Survey"
+import LogoutNav from "../components/LogoutNav";
+
 
 class Beers extends Component {
   state = {
@@ -66,6 +67,8 @@ class Beers extends Component {
 
   render() {
     return (
+      <div>
+      <LogoutNav/>
       <Container fluid>
         <Landing />
         <Row>
@@ -76,15 +79,9 @@ class Beers extends Component {
           </Col>
           
         </Row>
-        <Row>
-        <Col size="md-12">
-              <Dropdown 
-                value={this.state.survey}
-                onChange={this.handleInputChange}
-              />
-              </Col>
-        </Row>
+        
             <form>
+              
               <Input
                 value={this.state.name}
                 onChange={this.handleInputChange}
@@ -131,6 +128,7 @@ class Beers extends Component {
               <h3>No Results to Display</h3>
             )}
       </Container>
+      </div>
     );
   }
 }
